@@ -14,6 +14,12 @@
                     <option value="email" {{ $contact->type === 'email' ? 'selected' : '' }}>Email</option>
                     <option value="linkedin" {{ $contact->type === 'linkedin' ? 'selected' : '' }}>LinkedIn</option>
                     <option value="github" {{ $contact->type === 'github' ? 'selected' : '' }}>GitHub</option>
+                    <option value="gitlab" {{ $contact->type === 'gitlab' ? 'selected' : '' }}>GitLab</option>
+                    <option value="bitbucket" {{ $contact->type === 'bitbucket' ? 'selected' : '' }}>Bitbucket</option>
+                    <option value="codewars" {{ $contact->type === 'codewars' ? 'selected' : '' }}>Codewars</option>
+                    <option value="instagram" {{ $contact->type === 'instagram' ? 'selected' : '' }}>Instagram</option>
+                    <option value="facebook" {{ $contact->type === 'facebook' ? 'selected' : '' }}>Facebook</option>
+                    <option value="telegram" {{ $contact->type === 'telegram' ? 'selected' : '' }}>Telegram</option>
                     <option value="twitter" {{ $contact->type === 'twitter' ? 'selected' : '' }}>Twitter</option>
                     <option value="other" {{ $contact->type === 'other' ? 'selected' : '' }}>Other</option>
                 </select>

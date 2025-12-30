@@ -13,6 +13,12 @@
                     <option value="email">Email</option>
                     <option value="linkedin">LinkedIn</option>
                     <option value="github">GitHub</option>
+                    <option value="gitlab">GitLab</option>
+                    <option value="bitbucket">Bitbucket</option>
+                    <option value="codewars">Codewars</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="telegram">Telegram</option>
                     <option value="twitter">Twitter</option>
                     <option value="other">Other</option>
                 </select>
