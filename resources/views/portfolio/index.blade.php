@@ -23,9 +23,9 @@
                         ];
                     @endphp
                     @foreach($data['contacts'] as $type => $contact)
-                        <a href="{{ $type === 'email' ? 'mailto:' . $contact['value'] : $contact['value'] }}" 
-                           {{ $type !== 'email' ? 'target="_blank" rel="noopener noreferrer"' : '' }} 
-                           class="contact-link" 
+                        <a href="{{ $type === 'email' ? 'mailto:' . $contact['value'] : $contact['value'] }}"
+                           {{ $type !== 'email' ? 'target="_blank" rel="noopener noreferrer"' : '' }}
+                           class="contact-link"
                            title="{{ $contact['label'] }}">
                             {!! $contactIcons[$type] ?? '' !!}
                             <span>{{ $type === 'email' ? $contact['value'] : $contact['label'] }}</span>
@@ -44,6 +44,20 @@
                 <h2 class="section-title">{{ $data['about']['title'] }}</h2>
                 <div class="about-content">
                     <p>{{ $data['about']['description'] }}</p>
+                    <a href="https://www.testdome.com/certificates/be0dab2a547d414d8fef7a1547978f24" class="testdome-certificate-stamp silver">
+                        <span class="testdome-certificate-name">Grish Khachatryan</span>
+                        <span class="testdome-certificate-test-name">Laravel</span>
+                        <span class="testdome-certificate-card-logo">TestDome<br>Certificate</span>
+                    </a>
+                    <script>
+                        var stylesheet = "https://www.testdome.com/content/certificates/embed.css";
+                        link = document.createElement("link");
+                        link.href = stylesheet;
+                        link.type = "text/css";
+                        link.rel = "stylesheet";
+                        link.media = "screen,print";
+                        document.getElementsByTagName("head")[0].appendChild(link);
+                    </script>
                 </div>
             </div>
         </section>
@@ -105,8 +119,8 @@
                         ];
                     @endphp
                     @foreach($data['contacts'] as $type => $contact)
-                        <a href="{{ $type === 'email' ? 'mailto:' . $contact['value'] : $contact['value'] }}" 
-                           {{ $type !== 'email' ? 'target="_blank" rel="noopener noreferrer"' : '' }} 
+                        <a href="{{ $type === 'email' ? 'mailto:' . $contact['value'] : $contact['value'] }}"
+                           {{ $type !== 'email' ? 'target="_blank" rel="noopener noreferrer"' : '' }}
                            class="footer-link">
                             {!! $footerIcons[$type] ?? '' !!}
                             {{ $type === 'email' ? $contact['value'] : $contact['label'] }}
